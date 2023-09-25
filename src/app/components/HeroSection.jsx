@@ -18,14 +18,14 @@ const HeroSection = () => {
                 'Katja',
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 'Frontend developer',
-                // 1000,
-                // 'We produce food for Guinea Pigs',
-                // 1000,
+                1000,
+                'Web developer',
+                1000,
                 // 'We produce food for Chinchillas',
                 // 1000,
               ]}
               wrapper="span"
-              speed={100}
+              speed={50}
               repeat={Infinity}
             />
           </h1>
