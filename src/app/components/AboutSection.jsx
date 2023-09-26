@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: 'Skills',
     id: 'skills',
     content: (
-      <ul className='list-disc pl-2'>
+      <ul className="list-disc pl-2">
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>React</li>
@@ -24,7 +24,7 @@ const TAB_DATA = [
     title: 'Education',
     id: 'education',
     content: (
-      <ul className='list-disc pl-2'>
+      <ul className="list-disc pl-2">
         <li>Hexlet.io</li>
         <li>HTML Academy</li>
         <li>Moscow Power Engineering Institute (Technical University)</li>
@@ -62,18 +62,24 @@ const AboutSection = () => {
           height={500}
           alt="aboutImage"
         />
-        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
-          <p className="text-base lg:text-lg">
-            Hi 👋! I'm a self-taught and spirited frontend developer with a
-            passion for creating interactive and user-friendly applications. I
-            have expirience with tools such as JavaScript, React, HTML/CSS,
-            Redux, TypeScript, REST Api, Axios, Bootstrap, Ant Design, Material
-            UI, styled components, tailwindCSS, Git, FSD architecture. I'm quick
-            learner and I'm always looking to expand my knowledge and skill set.
-            I'm a team player and I'm excited to work with others to create
-            amazing applications.
-          </p>
+          <div className="text-[#8ecae6] lg:text-lg">
+            <p>Hi 👋 !</p> I'm a self-taught and spirited frontend developer
+            with a passion for creating interactive and user-friendly
+            applications.{' '}
+            <p>
+              I have expirience with tools such as JavaScript, React, HTML/CSS,
+              Redux, TypeScript, REST Api, Axios, Bootstrap, Ant Design,
+              Material UI, styled components, tailwindCSS, Git, FSD
+              architecture.
+            </p>{' '}
+            <p>
+              I'm quick learner and I'm always looking to expand my knowledge
+              and skill set. I'm a team player and I'm excited to work with
+              others to create amazing applications.
+            </p>
+          </div>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange('skills')}
