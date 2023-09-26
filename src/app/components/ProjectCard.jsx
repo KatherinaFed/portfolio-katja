@@ -26,7 +26,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, deployUrl }) => {
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 py-0.5 px-0.5 bg-gradient-to-br from-[#ffb703] to-[#219ebc]">
-        <div class="rounded-b-xl h-full py-6 px-4 w-full items-center justify-center bg-[#023047] back">
+        <div className="rounded-b-xl h-full py-6 px-4 w-full items-center justify-center bg-[#023047] back">
           <h5 className="font-xl font-semibold mb-2">{title}</h5>
           <p className="text-[#8ecae6]">{description}</p>
         </div>

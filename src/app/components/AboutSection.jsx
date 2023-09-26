@@ -76,8 +76,11 @@ const AboutSection = () => {
             </p>{' '}
             <p>
               I'm quick learner and I'm always looking to expand my knowledge
-              and skill set. I'm a team player and I'm excited to work with
-              others to create amazing applications.
+              and skill set.
+            </p>
+            <p>
+              I'm a team player and I'm excited to work with others to create
+              amazing applications.
             </p>
           </div>
           <div className="flex flex-row justify-start mt-8">
