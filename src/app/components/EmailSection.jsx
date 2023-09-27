@@ -29,7 +29,7 @@ const EmailSection = () => {
       body: jsonData,
     };
 
-    const response = await fetch('/api/send', options);
+    const response = await fetch(`${process.env.API_URL}/send`, options);
     // const resData = await response.json();
     console.log(response);
 
@@ -37,7 +37,7 @@ const EmailSection = () => {
       console.log('Message sent');
       setIsEmailSubmitted(true);
     } else {
-      console.log(response.statusText)
+      console.log(response.statusText);
     }
   };
 
