@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
+import Logo from '../../../public/logo.png'
 
 const navLinks = [
   {
@@ -24,13 +26,13 @@ const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 border border-b-[#8ecae6] border-l-transparent border-r-transparent border-t-transparent bg-[#023047] bg-opacity-100">
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-20 border border-b-[#8ecae6] border-l-transparent border-r-transparent border-t-transparent bg-black bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={'/'}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image src={Logo} width={100} height={100} alt='logo' />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!isNavbarOpen ? (
