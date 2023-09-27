@@ -20,7 +20,6 @@ const EmailSection = () => {
     };
 
     const jsonData = JSON.stringify(data);
-    const endpoint = '/api/send';
 
     const options = {
       method: 'POST',
@@ -30,24 +29,31 @@ const EmailSection = () => {
       body: jsonData,
     };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
+    const response = await fetch(`${process.env.API_URL}/send`, options);
+    // const resData = await response.json();
+    console.log(response);
 
     if (response.status === 200) {
       console.log('Message sent');
       setIsEmailSubmitted(true);
+    } else {
+      console.log(response.statusText);
     }
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-10 md:my-12 py-4 gap-4 relative">
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 my-10 md:my-12 py-4 gap-4 relative"
+    >
       <div className="z-10 mb-3">
-        <h5 className="text-xl font-bold text-white my-2">Let's connect!</h5>
+        <h5 className="text-xl font-bold text-white my-2">
+          Let&apos;s connect!
+        </h5>
         <p className="text-[#8ecae6] mb-4 max-w-md">
-          I'm currently looking for new opportunities, my inbox is always open.
-          Whether you have a quastion or just want to say hi, I'll try my best
-          to get back to you!
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. Whether you have a quastion or just want to say hi, I&apos;ll
+          try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-3">
           <Link href="https://github.com/KatherinaFed">
@@ -62,7 +68,7 @@ const EmailSection = () => {
         </div>
       </div>
 
-      <div className=''>
+      <div className="">
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label

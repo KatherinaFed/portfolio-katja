@@ -9,12 +9,12 @@ const HeroSection = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
         className=" flex flex-col items-center place-self-center text-center sm:text-left justify-self-start"
       >
         <h1 className="text-white mb-4 text-4xl h-28 sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffb703] to-[#219ebc]">
-            Hello, I'm {''}
+            Hello, I&apos;m {''}
           </span>
 
           <TypeAnimation
@@ -37,7 +37,7 @@ const HeroSection = () => {
             Here, you can discover more about me, explore my projects, and find
             my contact information.
           </p>{' '}
-          <p>I'm excited to work together!</p>
+          <p>I&apos;m excited to work together!</p>
         </div>
         <div className="mb-10">
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#ffb703] to-[#219ebc] text-black">
