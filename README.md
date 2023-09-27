@@ -1,9 +1,10 @@
 <div align="center">
 <img alt="logo E.F." width="100" src='/public/logo.png' />
+
+
+<div align="center">
+<h2> Website deployed on Versel: https://portfolio-katja-f69o1rwsp-katherinafed.vercel.app/<h2>
 </div>
-<h1 align="center">
-  [Ekaterina Fedoseeva portfolio](https://portfolio-katja-f69o1rwsp-katherinafed.vercel.app/)
-</h1>
 
 ![main section](/public/readme/main.png)
 ![about section](/public/readme/about.png)
