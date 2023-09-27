@@ -2,7 +2,7 @@
 <img alt="logo E.F." width="100" src='/public/logo.png' />
 </div>
 <h1 align="center">
-  brittanychiang.com - v4
+  [Ekaterina Fedoseeva portfolio](https://portfolio-katja-f69o1rwsp-katherinafed.vercel.app/)
 </h1>
 
 ![main section](/public/readme/main.png)
