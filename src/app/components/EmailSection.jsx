@@ -41,9 +41,8 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my12 py-24 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#8ecae6] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
+    <section className="grid md:grid-cols-2 my-10 md:my-12 py-4 gap-4 relative">
+      <div className="z-10 mb-3">
         <h5 className="text-xl font-bold text-white my-2">Let's connect!</h5>
         <p className="text-[#8ecae6] mb-4 max-w-md">
           I'm currently looking for new opportunities, my inbox is always open.
@@ -63,7 +62,7 @@ const EmailSection = () => {
         </div>
       </div>
 
-      <div>
+      <div className=''>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
@@ -78,7 +77,7 @@ const EmailSection = () => {
               id="email"
               required
               placeholder="johndoe@gmail.com"
-              className="bg-[#264653] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
+              className="bg-[#023047] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
             />
           </div>
 
@@ -95,7 +94,7 @@ const EmailSection = () => {
               id="subject"
               required
               placeholder="Just say hi ;)"
-              className="bg-[#264653] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
+              className="bg-[#023047] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
             />
           </div>
 
@@ -109,7 +108,7 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-[#264653] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
+              className="bg-[#023047] border border-[#8ecae6] text-sm rounded-lg text-white block w-full p-2.5 focus:outline-[#ffb703]"
               placeholder={`Hi Katja, I'd like to talk about...`}
             />
           </div>
