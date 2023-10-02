@@ -3,7 +3,7 @@
 
 
 <div align="center">
-<h2> Website deployed on Versel: https://portfolio-katja-f69o1rwsp-katherinafed.vercel.app/<h2>
+<h2> Website deployed on Versel: https://portfolio-katja.vercel.app<h2>
 </div>
 
 ![main section](/public/readme/main.png)
