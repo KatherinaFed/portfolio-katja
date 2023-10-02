@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import GithubIcon from '../../../public/github-icon.png';
 import LinkedinIcon from '../../../public/linkedin-icon.png';
 import TelegramIcon from '../../../public/telegram-icon.png';
-
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const EmailSection = () => {
   const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
@@ -56,15 +56,21 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-3">
-          <Link href="https://github.com/KatherinaFed">
-            <Image src={GithubIcon} alt="github icon" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/ekaterina-fedoseeva-739514261/">
-            <Image src={LinkedinIcon} alt="linkedin icon" />
-          </Link>
-          <Link href="https://t.me/katja_fed">
-            <Image src={TelegramIcon} alt="telegram icon" />
-          </Link>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href="https://github.com/KatherinaFed"
+          >
+            <Image src={GithubIcon} alt="github icon" width={40} height={40} />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href="https://www.linkedin.com/in/ekaterina-fedoseeva-739514261/"
+          >
+            <Image src={LinkedinIcon} alt="linkedin icon" width={40} height={40} />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://t.me/katja_fed">
+            <Image src={TelegramIcon} alt="telegram icon" width={40} height={40} />
+          </motion.a>
         </div>
       </div>
 

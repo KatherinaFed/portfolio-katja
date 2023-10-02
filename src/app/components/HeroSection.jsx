@@ -9,7 +9,7 @@ const HeroSection = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.5 }}
         className=" flex flex-col items-center place-self-center text-center sm:text-left justify-self-start"
       >
         <h1 className="text-white mb-4 text-4xl h-28 sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
@@ -40,14 +40,18 @@ const HeroSection = () => {
           <p>I&apos;m excited to work together!</p>
         </div>
         <div className="mb-10">
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#ffb703] to-[#219ebc] text-black">
-            <a href={process.env.LINKEDIN_LINK}>Hire me</a>
-          </button>
-          <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full  bg-gradient-to-br from-[#ffb703] to-[#219ebc] hover:bg-[#fb8500] text-white mt-3">
-            <span className="block bg-black hover:bg-[#023047] rounded-full px-5 py-2">
-              <a href={process.env.CV_LINK}>Download CV</a>
-            </span>
-          </button>
+          <a href={process.env.LINKEDIN_LINK}>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#ffb703] to-[#219ebc] text-black">
+              Hire me
+            </button>
+          </a>
+          <a href={process.env.CV_LINK}>
+            <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full  bg-gradient-to-br from-[#ffb703] to-[#219ebc] hover:bg-[#fb8500] text-white mt-3">
+              <span className="block bg-black hover:bg-[#023047] rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </button>
+          </a>
         </div>
       </motion.div>
       {/* <div className="col-span-4 place-self-center mt-10">
