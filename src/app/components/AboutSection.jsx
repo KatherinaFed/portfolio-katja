@@ -1,23 +1,29 @@
 'use client';
 import Image from 'next/image';
-import React, { useTransition, useState, startTransition } from 'react';
+import React, { useTransition, useState, useRef } from 'react';
 import TabButton from './TabButton';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { EDUCATION, SKILLS } from '../const';
 
-const TAB_DATA = [
+const cardVariants = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+};
+
+const TAB_DATA = (ref, isInView) => [
   {
     title: 'Skills',
     id: 'skills',
     content: (
-      <ul className="list-disc pl-2">
+      <ul ref={ref} className="list-disc pl-2">
         <AnimatePresence>
           {SKILLS.map((skill, index) => (
             <motion.li
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.3, delay: index * 0.3 }}
               key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? 'animate' : 'initial'}
+              transition={{ duration: 0.3, delay: index * 0.3 }}
             >
               {skill}
             </motion.li>
@@ -60,12 +66,15 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState('skills');
   const [isPending, startTransition] = useTransition();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
     });
   };
+
   return (
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -122,7 +131,7 @@ const AboutSection = () => {
             </TabButton> */}
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+            {TAB_DATA(ref, isInView).find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
