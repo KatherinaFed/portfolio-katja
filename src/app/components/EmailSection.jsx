@@ -50,7 +50,7 @@ const EmailSection = () => {
       <div className="z-10 mb-3">
         <h5 className="text-2xl text-center font-bold text-white my-2">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffb703] to-[#219ebc]">
-            Let's connect! {''}
+            Let&apos;s connect! {''}
           </span>
           <div>
             <TypeAnimation
