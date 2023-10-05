@@ -76,7 +76,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="text-white">
+    <section id="about" className="text-white pt-24 -mt-24">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src={'/images/avatar.png'}
@@ -92,12 +92,12 @@ const AboutSection = () => {
             developer with a passion for creating interactive and user-friendly
             applications.{' '}
             <p>
-              I have expirience with tools such as{' '}
+              I have experience with tools such as{' '}
               <span className="font-semibold text-[#ffb703]">
                 {' '}
                 JavaScript, React, HTML/CSS, Redux, TypeScript, REST Api, Axios,
-                Bootstrap, Ant Design, Material UI, styled components,
-                tailwindCSS, Git, FSD architecture
+                tailwindCSS, Sass, Bootstrap, Ant Design, Material UI, styled
+                components, Git, FSD architecture
               </span>
               .
             </p>{' '}

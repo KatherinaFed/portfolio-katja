@@ -4,8 +4,9 @@ export const SKILLS = [
   'React',
   'Redux toolkit',
   'RTK query',
-  'Styled components',
+  'Sass',
   'TailwindCSS',
+  'Styled components',
   'Git',
   'FSD Architecture',
 ];
