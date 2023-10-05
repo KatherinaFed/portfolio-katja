@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import GithubIcon from '../../../public/github-icon.png';
 import LinkedinIcon from '../../../public/linkedin-icon.png';
 import TelegramIcon from '../../../public/telegram-icon.png';
-import Link from 'next/link';
+import GmailIcon from '../../../public/gmail-icon.png';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 const EmailSection = () => {
   const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
@@ -44,18 +45,37 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-10 md:my-12 py-4 gap-4 relative"
+      className="flex justify-center align-middle my-10 md:my-12 py-4 gap-4 relative"
     >
       <div className="z-10 mb-3">
-        <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s connect!
+        <h5 className="text-2xl text-center font-bold text-white my-2">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffb703] to-[#219ebc]">
+            Let&apos;s connect! {''}
+          </span>
+          <div>
+            <TypeAnimation
+              sequence={[
+                'GitHub',
+                1000,
+                'LinkedIn',
+                1000,
+                'Telegram',
+                1000,
+                'Gmail',
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </div>
         </h5>
-        <p className="text-[#8ecae6] mb-4 max-w-md">
+        <p className="text-[#8ecae6] mb-4 text-xl max-w-2xl text-center ">
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a quastion or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-3">
+        <div className="socials flex flex-row gap-3 justify-center">
           <motion.a
             whileHover={{ scale: 1.2 }}
             href="https://github.com/KatherinaFed"
@@ -66,15 +86,31 @@ const EmailSection = () => {
             whileHover={{ scale: 1.2 }}
             href="https://www.linkedin.com/in/ekaterina-fedoseeva-739514261/"
           >
-            <Image src={LinkedinIcon} alt="linkedin icon" width={40} height={40} />
+            <Image
+              src={LinkedinIcon}
+              alt="linkedin icon"
+              width={40}
+              height={40}
+            />
           </motion.a>
           <motion.a whileHover={{ scale: 1.2 }} href="https://t.me/katja_fed">
-            <Image src={TelegramIcon} alt="telegram icon" width={40} height={40} />
+            <Image
+              src={TelegramIcon}
+              alt="telegram icon"
+              width={40}
+              height={40}
+            />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href="mailto:fedoseeva.ektr@gmail.com"
+          >
+            <Image src={GmailIcon} alt="gmail icon" width={40} height={40} />
           </motion.a>
         </div>
       </div>
 
-      <div className="">
+      {/* <div className="">
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
@@ -136,7 +172,7 @@ const EmailSection = () => {
             </p>
           )}
         </form>
-      </div>
+      </div> */}
     </section>
   );
 };
