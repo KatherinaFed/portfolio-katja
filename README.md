@@ -8,7 +8,7 @@
 
 ![main section](/public/readme/main.png)
 ![about section](/public/readme/about.png)
-![projects section](/public/readme/projects.png)
+
 ![contact section](/public/readme/contact.png)
 
 ## 🎨 Color Reference
