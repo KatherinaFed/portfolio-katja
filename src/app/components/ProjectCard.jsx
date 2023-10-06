@@ -25,10 +25,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, deployUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 py-0.5 px-0.5 bg-gradient-to-br from-[#ffb703] to-[#219ebc]">
-        <div className="rounded-b-xl h-full py-6 px-4 w-full items-center justify-center bg-[#023047]">
+      <div className="text-white rounded-b-xl h-full mt-3 py-0.5 px-0.5 bg-gradient-to-br from-[#ffb703] to-[#219ebc]">
+        <div className="rounded-b-xl py-6 px-4 w-full bg-[#023047]">
           <h5 className="font-xl font-semibold mb-2">{title}</h5>
-          <p className="text-[#8ecae6]">{description}</p>
+          <p style={{ minHeight: '120px' }} className="text-[#8ecae6]">
+            {description}
+          </p>
         </div>
       </div>
     </div>
