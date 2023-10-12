@@ -1,10 +1,11 @@
 <div align="center">
 <img alt="logo E.F." width="100" src='/public/logo.png' />
 
+<h1>
+  
+[Portfolio website](https://portfolio-katja.vercel.app) 
+</h1>
 
-<div align="center">
-<h2> Portfolio link: https://portfolio-katja.vercel.app<h2>
-</div>
 
 ![main section](/public/readme/main.png)
 ![about section](/public/readme/about.png)
