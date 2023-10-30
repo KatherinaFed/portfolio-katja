@@ -77,7 +77,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="text-white pt-24 -mt-24">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-2 xl:gap-16 sm:py-4 xl:px-16">
         <Image
           src={'/images/avatar.png'}
           width={500}

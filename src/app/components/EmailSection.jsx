@@ -48,27 +48,28 @@ const EmailSection = () => {
       className="flex justify-center align-middle my-10 md:my-12 py-4 gap-4 relative"
     >
       <div className="z-10 mb-3">
-        <h5 className="text-2xl text-center font-bold text-white my-2">
+        <h5 className="text-4xl text-center font-bold my-2">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffb703] to-[#219ebc]">
             Let&apos;s connect! {''}
           </span>
-          <div>
-            <TypeAnimation
-              sequence={[
-                'GitHub',
-                1000,
-                'LinkedIn',
-                1000,
-                'Telegram',
-                1000,
-                'Gmail',
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </div>
+        </h5>
+
+        <h5 className="text-2xl text-center font-semibold text-white my-2">
+          <TypeAnimation
+            sequence={[
+              'GitHub',
+              1000,
+              'LinkedIn',
+              1000,
+              'Telegram',
+              1000,
+              'Gmail',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
         </h5>
         <p className="text-[#8ecae6] mb-4 text-xl max-w-2xl text-center ">
           I&apos;m currently looking for new opportunities, my inbox is always
