@@ -4,12 +4,12 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: `Hello, I'm Frontend developer`,
+  title: 'Ekaterina Fedoseeva',
   description: 'Personal portfolio with my projects',
   keywords: ['Next.js', 'React', 'JavaScript', 'Tailwind', 'Frontend'],
   creator: 'Ekaterina Fedoseeva',
   openGraph: {
-    title: `Hello, I'm Frontend developer`,
+    title: 'Ekaterina Fedoseeva',
     description: 'Personal portfolio with my projects',
     images: ['/images/avatar.png'],
     locale: 'en_US',
