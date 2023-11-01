@@ -5,7 +5,12 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Ekaterina Fedoseeva',
-  description: 'Portfolio',
+  description: 'Personal portfolio with my projects',
+  keywords: ['Next.js', 'React', 'JavaScript', 'Tailwind', 'Frontend'],
+  creator: 'Ekaterina Fedoseeva',
+  openGraph: {
+    images: ['/images/avatar.png'],
+  },
   icons: {
     icon: ['/favicon/favicon.ico'],
     apple: ['/favicon/apple-touch-icon.png'],
