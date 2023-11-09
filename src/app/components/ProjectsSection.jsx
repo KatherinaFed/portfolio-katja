@@ -10,7 +10,7 @@ const projectsData = [
     title: 'Google Books Search Website',
     description:
       'The Google Books Search App is a user-friendly app that allows you to search for books and discover detailed information about them.',
-    image: '/images/projectsImg/1.png',
+    image: '/images/projectsImg/books.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/KatherinaFed/book-search',
     deployUrl: 'https://book-search-steel.vercel.app/',
@@ -24,24 +24,24 @@ const projectsData = [
     gitUrl: 'https://github.com/KatherinaFed/frontend-project-lvl4',
     deployUrl: 'https://slack-chat-react-0e50481335ce.herokuapp.com/',
   },
-  // {
-  //   id: 2,
-  //   title: 'Todo Application',
-  //   description: 'Application that simplify your daily task management.',
-  //   image: '/images/projectsImg/2.png',
-  //   tag: ['All', 'Web'],
-  //   gitUrl: 'https://github.com/KatherinaFed/todo_list_fsd',
-  //   deployUrl: 'https://react-todo-json-server-f736b2fe9507.herokuapp.com/',
-  // },
   {
     id: 3,
     title: 'Social media Website',
     description:
       'Social media platform lets you connect with friends, share updates, photos, and posts. Customize your profile, follow others, and enjoy.',
-    image: '/images/projectsImg/3.png',
+    image: '/images/projectsImg/social.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/KatherinaFed/social-media',
     deployUrl: 'https://katherinafed.github.io/social-media/',
+  },
+    {
+    id: 4,
+    title: 'Todo Application',
+    description: 'Application that simplify your daily task management.',
+    image: '/images/projectsImg/todo.png',
+    tag: ['All', 'Web'],
+    gitUrl: 'https://github.com/KatherinaFed/todo_list_fsd',
+    deployUrl: 'https://todo-app-react-d1d856615e9f.herokuapp.com/',
   },
 ];
 
