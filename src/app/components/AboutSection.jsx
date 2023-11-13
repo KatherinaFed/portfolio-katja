@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useTransition, useState, useRef } from 'react';
 import TabButton from './TabButton';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { EDUCATION, SKILLS } from '../const';
+import { EDUCATION, EXPERIENCE, SKILLS } from '../const';
 
 const cardVariants = {
   initial: { y: 50, opacity: 0 },
@@ -50,17 +50,28 @@ const TAB_DATA = (ref, isInView) => [
       </ul>
     ),
   },
-  // {
-  //   title: 'Expirience',
-  //   id: 'expirience',
-  //   constent: (
-  //     <ul className='list-disc pl-2'>
-  //       <li>Hexlte.io</li>
-  //       <li>HTML Academy</li>
-  //       <li>Moscow Power Engineering Institute (Technical University)</li>
-  //     </ul>
-  //   ),
-  // },
+  {
+    title: 'Experience',
+    id: 'experience',
+    content: (
+      <ul className="list-disc pl-2">
+        <div className="text-lg font-semibold">
+          Snowflakes (Sep 2023 - Present)
+        </div>
+        {EXPERIENCE.map((exp, index) => (
+          <motion.li
+            className="text-[#8ecae6]"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
+            key={index}
+          >
+            {exp}
+          </motion.li>
+        ))}
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -123,12 +134,12 @@ const AboutSection = () => {
             >
               Education
             </TabButton>
-            {/* <TabButton
-              selectTab={() => handleTabChange('expirience')}
-              active={tab === 'expirience'}
+            <TabButton
+              selectTab={() => handleTabChange('experience')}
+              active={tab === 'experience'}
             >
-              Expirience
-            </TabButton> */}
+              Experience
+            </TabButton>
           </div>
           <div className="mt-8">
             {TAB_DATA(ref, isInView).find((t) => t.id === tab).content}
