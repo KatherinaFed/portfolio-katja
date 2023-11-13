@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+  metadataBase: new URL('https://portfolio-katja.vercel.app/'),
   title: 'Ekaterina Fedoseeva',
   description: 'Personal portfolio with my projects',
   keywords: ['Next.js', 'React', 'JavaScript', 'Tailwind', 'Frontend'],
