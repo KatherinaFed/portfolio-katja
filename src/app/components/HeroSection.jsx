@@ -45,7 +45,11 @@ const HeroSection = () => {
               Hire me
             </button>
           </a>
-          <a href={process.env.CV_LINK}>
+          <a
+            href={
+              'https://drive.google.com/file/d/1X4k8iyzhBaXCZ_nZM7ynsitfVB_rlNvY/view?usp=sharing'
+            }
+          >
             <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full  bg-gradient-to-br from-[#ffb703] to-[#219ebc] hover:bg-[#fb8500] text-white mt-3">
               <span className="block bg-black hover:bg-[#023047] rounded-full px-5 py-2">
                 Download CV
