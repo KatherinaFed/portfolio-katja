@@ -58,6 +58,13 @@ const TAB_DATA = (ref, isInView) => [
         <div className="text-lg font-semibold">
           Snowflakes (Sep 2023 - Present)
         </div>
+        <div className="text-lg font-light">Project website:</div>
+        <a
+          href="https://property-library.com/"
+          className={`font-semibold hover:text-white text-[#ffb703]`}
+        >
+          https://property-library.com
+        </a>
         {EXPERIENCE.map((exp, index) => (
           <motion.li
             className="text-[#8ecae6]"
