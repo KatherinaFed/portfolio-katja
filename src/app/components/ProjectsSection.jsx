@@ -41,7 +41,7 @@ const projectsData = [
     image: '/images/projectsImg/todo.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/KatherinaFed/todo_list_fsd',
-    deployUrl: 'https://todo-app-react-d1d856615e9f.herokuapp.com/',
+    deployUrl: 'https://todo-app-fsd.netlify.app/',
   },
 ];
 
@@ -50,9 +50,9 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
+  // const handleTagChange = (newTag) => {
+  //   setTag(newTag);
+  // };
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
