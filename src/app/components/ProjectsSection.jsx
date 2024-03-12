@@ -10,10 +10,10 @@ const projectsData = [
     title: 'Google Books Search Website',
     description:
       'The Google Books Search App is a user-friendly app that allows you to search for books and discover detailed information about them.',
-    image: '/images/projectsImg/books.png',
+    image: '/images/projectsImg/book.png',
     tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/KatherinaFed/book-search',
-    deployUrl: 'https://book-search-google.netlify.app',
+    gitUrl: 'https://github.com/KatherinaFed/book-search-new',
+    deployUrl: 'https://book-adventure.netlify.app/',
   },
   // {
   //   id: 2,
